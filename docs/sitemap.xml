@@ -21,7 +21,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ochsec.github.io/the-long-view-book/better-world.html</loc>
+    <loc>https://ochsec.github.io/the-long-view-book/better_world.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ochsec.github.io/the-long-view-book/enlightenment_now.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
