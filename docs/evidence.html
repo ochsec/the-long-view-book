@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Evidence for Human Progress — Why the World Is Getting Better</title>
+<meta name="description" content="The data behind rational optimism: global poverty, child mortality, life expectancy, violence, education, and technology. Every statistic sourced and verifiable.">
+<meta name="keywords" content="rational optimism, world getting better, human progress, evidence-based optimism, global poverty decline, Hans Rosling, Steven Pinker">
+<meta property="og:title" content="The Evidence for Human Progress">
+<meta property="og:description" content="Why the world is getting better — the data behind rational optimism. Sourced, verifiable, and surprising.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://ochsec.github.io/the-long-view-book/evidence.html">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    background: #0a0e1a;
+    color: #e8e0d0;
+    line-height: 1.7;
+  }
+  
+  .nav {
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(232, 168, 56, 0.15);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e8a838;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: #c8c0b0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover { color: #e8a838; }
+  
+  .article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 900;
+    color: #faf5ed;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  
+  .article-subtitle {
+    font-size: 1.2rem;
+    color: #a8a090;
+    font-weight: 300;
+  }
+  
+  .article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #e8a838;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .article h3 {
+    font-size: 1.3rem;
+    color: #dfc8a8;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .article p {
+    font-size: 1.1rem;
+    color: #c8c0b0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article .stat-box {
+    background: linear-gradient(135deg, #1a1e2e, #1e2438);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid #e8a838;
+  }
+  
+  .stat-box .number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #e8a838;
+    display: block;
+  }
+  
+  .stat-box .label {
+    font-size: 1rem;
+    color: #c8c0b0;
+  }
+  
+  .article .source {
+    font-size: 0.85rem;
+    color: #686050;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  .article blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #e8d8b8;
+    border-left: 3px solid #e8a838;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .article ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article li {
+    font-size: 1.1rem;
+    color: #c8c0b0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-section {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #1a1e2e, #1e2438);
+    border-radius: 12px;
+    border: 1px solid rgba(232, 168, 56, 0.2);
+  }
+  
+  .cta-section h2 {
+    margin-top: 0;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, #e8a838, #d48838);
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(232, 168, 56, 0.3);
+    margin-top: 1rem;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(232, 168, 56, 0.5);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #686050;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  footer a { color: #a8a090; text-decoration: none; }
+  footer a:hover { color: #e8a838; }
+  
+  @media (max-width: 600px) {
+    .article { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-brand">The Long View</a>
+  <a href="index.html" class="nav-link">Book</a>
+</nav>
+
+<article class="article">
+  <div class="article-header">
+    <h1 class="article-title">The Evidence for Human Progress</h1>
+    <p class="article-subtitle">Why the world is getting better — the data behind rational optimism</p>
+  </div>
+  
+  <p>If you read the news every day, you'd think civilization is collapsing. War, climate disaster, political polarization, economic anxiety — the headlines paint a picture of relentless decline. But the headlines are not the data. When we look at what has actually happened to human welfare over the past fifty, hundred, and two hundred years, a radically different picture emerges.</p>
+  
+  <p>This is not blind optimism. It is not denial of real problems. It is what the evidence says when you look at it carefully. Here is that evidence.</p>
+  
+  <h2>1. Global Poverty Has Collapsed</h2>
+  
+  <div class="stat-box">
+    <span class="number">90%</span>
+    <span class="label">Reduction in extreme global poverty since 1990</span>
+  </div>
+  
+  <p>In 1990, 36% of the world's population lived in extreme poverty — defined as living on less than $2.15 per day (adjusted for purchasing power). By 2015, that number had fallen to 10%. By 2019, before the pandemic, it was under 8%. This is the fastest reduction in poverty in human history, and it happened during the period that most people consider an era of "decline."</p>
+  
+  <p>To put this in perspective: in 1820, roughly 75% of the world's population lived in extreme poverty. For most of human history, poverty was the default condition. The escape from it is recent, accelerating, and unprecedented.</p>
+  
+  <p class="source">Source: World Bank Poverty and Shared Prosperity Report; Our World in Data, "Global extreme poverty"</p>
+  
+  <h2>2. Child Mortality Has Plummeted</h2>
+  
+  <div class="stat-box">
+    <span class="number">-66%</span>
+    <span class="label">Decline in under-5 child mortality rate since 1990</span>
+  </div>
+  
+  <p>In 1990, an estimated 12.5 million children under five died every year. By 2022, that number had fallen to 4.6 million — a 63% reduction. In 1800, roughly 43% of all children died before age five. Today, the global average is under 4%.</p>
+  
+  <p>This means that in the last two centuries, humanity went from losing nearly half its children before age five to losing fewer than one in twenty-five. This is not a marginal improvement. It is one of the most dramatic transformations in the human condition ever recorded.</p>
+  
+  <p class="source">Source: UNICEF State of the World's Children; Our World in Data, "Child and Infant Mortality"</p>
+  
+  <h2>3. Life Expectancy Has Doubled</h2>
+  
+  <div class="stat-box">
+    <span class="number">2x</span>
+    <span class="label">Global average life expectancy since 1950</span>
+  </div>
+  
+  <p>In 1900, the global average life expectancy at birth was approximately 32 years. By 1950, it had risen to about 47 years. Today, it stands at approximately 73 years — and in many developed countries, over 80. A child born today can expect to live more than twice as long as one born a century ago.</p>
+  
+  <p>The gains have been largest in the poorest countries. Sub-Saharan Africa saw life expectancy rise from 37 years in 1950 to 62 years today. India went from 36 to 70. These are not small gains — they represent billions of human lifetimes that would otherwise have been lost.</p>
+  
+  <p class="source">Source: UN Population Division; Our World in Data, "Life Expectancy"</p>
+  
+  <h2>4. Violence Is Declining</h2>
+  
+  <p>Despite the constant stream of war coverage, the long-term trend in violence is downward. Steven Pinker's research, documented in <em>The Better Angels of Our Nature</em>, shows that deaths from war, homicide, and violence have declined dramatically over multiple timescales:</p>
+  
+  <ul>
+    <li>The rate of battle deaths in interstate wars has fallen from about 6 per 100,000 people in the 1950s to less than 1 per 100,000 today</li>
+    <li>Homicide rates in medieval Europe were 30-100 per 100,000; today, the European average is around 1 per 100,000</li>
+    <li>Global conflict deaths peaked in the 1940s and have generally declined since, despite population growth</li>
+  </ul>
+  
+  <p>This does not mean violence has ended. It means that, measured against any historical baseline, we live in an unusually peaceful time.</p>
+  
+  <p class="source">Source: Steven Pinker, "The Better Angels of Our Nature" (2011); UCDP/PRIO Armed Conflict Dataset; Our World in Data, "War and Peace"</p>
+  
+  <h2>5. Education Has Exploded</h2>
+  
+  <div class="stat-box">
+    <span class="number">86%</span>
+    <span class="label">Global literacy rate among adults (from ~12% in 1820)</span>
+  </div>
+  
+  <p>In 1820, only 12% of the world's adults could read. Today, 86% can. Primary school enrollment in developing countries went from roughly 50% in 1970 to over 90% today. The number of people completing secondary education has risen from under 20% globally in 1970 to over 50% today.</p>
+  
+  <p>More people are receiving more education than at any point in history. This matters not just for individual welfare but for the compounding effects of an educated population: innovation, democratic participation, public health, and economic growth.</p>
+  
+  <p class="source">Source: UNESCO Institute for Statistics; Our World in Data, "Education"</p>
+  
+  <h2>6. Technology Is Accelerating</h2>
+  
+  <p>The pace of technological progress has not slowed — it has accelerated. Consider the time from invention to widespread adoption:</p>
+  
+  <ul>
+    <li>Telephone: 75 years to reach 100 million users</li>
+    <li>Mobile phone: 16 years to reach 100 million users</li>
+    <li>Internet: 7 years to reach 100 million users</li>
+    <li>ChatGPT: 2 months to reach 100 million users</li>
+  </ul>
+  
+  <p>Each major technology reaches the population faster than the last. The compounding effect means that innovations in medicine, energy, agriculture, and communication are spreading to benefit more people more quickly than ever before.</p>
+  
+  <h2>Why Doesn't It Feel Better?</h2>
+  
+  <blockquote>If the world is getting better, why does it feel like it's falling apart?</blockquote>
+  
+  <p>This is the central question that <em>The Long View</em> addresses. The answer involves several cognitive biases that our brains evolved for a very different world:</p>
+  
+  <h3>Negativity Bias</h3>
+  <p>Our brains are wired to prioritize threats over good news. A danger that kills one person is more salient than a trend that saves a million. This was adaptive on the savannah — missing a threat meant death, missing an opportunity meant a smaller lunch. But in a world of global media, it means we hear about every disaster and almost none of the progress.</p>
+  
+  <h3>Availability Heuristic</h3>
+  <p>We judge frequency by how easily examples come to mind. A single terrorist attack is more "available" in memory than decades of declining violence. The media amplifies this by reporting the dramatic and ignoring the gradual.</p>
+  
+  <h3>The Nature of Progress</h3>
+  <p>Progress is incremental. A 2% annual reduction in child mortality doesn't make headlines. But compounded over 30 years, it means millions of children who would have died are alive. Progress is real but invisible — it happens in the spaces between the headlines.</p>
+  
+  <h2>The Rational Optimist's Toolkit</h2>
+  
+  <p>Recognizing that the world is getting better does not mean ignoring problems. It means having an accurate baseline. If you believe everything is getting worse, you'll either despair or pursue destructive "solutions." If you understand what's actually happening, you can direct your energy toward the problems that remain — and there are real ones — with clarity rather than panic.</p>
+  
+  <p>Rational optimism is not a feeling. It's a method:</p>
+  
+  <ul>
+    <li><strong>Look at the data, not the narrative.</strong> Headlines tell stories; data tells truth.</li>
+    <li><strong>Use the right timescale.</strong> Year-to-year fluctuations obscure decade-to-decade trends.</li>
+    <li><strong>Measure what matters.</strong> Life, health, education, freedom — not just GDP.</li>
+    <li><strong>Acknowledge problems without catastrophizing.</strong> Real problems are solvable; panic is not a strategy.</li>
+    <li><strong>Recognize compounding.</strong> Small improvements, sustained, transform the world.</li>
+  </ul>
+  
+  <div class="cta-section">
+    <h2>Want the Full Case?</h2>
+    <p>This article is a fraction of what <em>The Long View</em> covers. The book walks through 11 chapters of evidence, psychology, systems thinking, and practical action — with 74 sourced endnotes and a companion workbook of 7 daily practices.</p>
+    <a href="index.html" class="cta-button">Learn More About the Book</a>
+  </div>
+  
+  <p style="text-align: center; color: #686050; font-size: 0.9rem; margin-top: 3rem;">
+    All statistics in this article are drawn from publicly available datasets. For full sourcing and deeper analysis, see <em>The Long View</em> by Christoph Reiter.
+  </p>
+</article>
+
+<footer>
+  <p><a href="index.html">The Long View</a> &middot; <a href="evidence.html">Evidence</a> &middot; by Christoph Reiter</p>
+  <p>&copy; 2026</p>
+</footer>
+
+</body>
+</html>

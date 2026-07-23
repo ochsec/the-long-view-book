@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why We Think the World Is Getting Worse — The Psychology of Pessimism</title>
+<meta name="description" content="The cognitive biases that make us believe the world is declining despite evidence of progress: negativity bias, availability heuristic, and the media's role in distorting reality.">
+<meta name="keywords" content="why world getting worse, negativity bias, availability heuristic, cognitive bias pessimism, psychology of pessimism, media distortion, learned helplessness">
+<meta property="og:title" content="Why We Think the World Is Getting Worse">
+<meta property="og:description" content="The psychology behind pessimism bias — and how to overcome it.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://ochsec.github.io/the-long-view-book/psychology.html">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    background: #0a0e1a;
+    color: #e8e0d0;
+    line-height: 1.7;
+  }
+  
+  .nav {
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(232, 168, 56, 0.15);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e8a838;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: #c8c0b0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover { color: #e8a838; }
+  
+  .article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 900;
+    color: #faf5ed;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  
+  .article-subtitle {
+    font-size: 1.2rem;
+    color: #a8a090;
+    font-weight: 300;
+  }
+  
+  .article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #e8a838;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .article h3 {
+    font-size: 1.3rem;
+    color: #dfc8a8;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .article p {
+    font-size: 1.1rem;
+    color: #c8c0b0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #e8d8b8;
+    border-left: 3px solid #e8a838;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .article ul, .article ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article li {
+    font-size: 1.1rem;
+    color: #c8c0b0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bias-box {
+    background: linear-gradient(135deg, #1a1e2e, #1e2438);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid #e8a838;
+  }
+  
+  .bias-box strong {
+    color: #e8a838;
+    font-size: 1.15rem;
+  }
+  
+  .practice-box {
+    background: linear-gradient(135deg, #1a1e2e, #1e2438);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(232, 168, 56, 0.2);
+  }
+  
+  .practice-box h3 {
+    margin-top: 0;
+  }
+  
+  .cta-section {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #1a1e2e, #1e2438);
+    border-radius: 12px;
+    border: 1px solid rgba(232, 168, 56, 0.2);
+  }
+  
+  .cta-section h2 {
+    margin-top: 0;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, #e8a838, #d48838);
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(232, 168, 56, 0.3);
+    margin-top: 1rem;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(232, 168, 56, 0.5);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #686050;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  footer a { color: #a8a090; text-decoration: none; }
+  footer a:hover { color: #e8a838; }
+  
+  @media (max-width: 600px) {
+    .article { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-brand">The Long View</a>
+  <a href="index.html" class="nav-link">Book</a>
+</nav>
+
+<article class="article">
+  <div class="article-header">
+    <h1 class="article-title">Why We Think the World Is Getting Worse</h1>
+    <p class="article-subtitle">The psychology of pessimism — and how to see clearly</p>
+  </div>
+  
+  <p>Ask anyone how the world is doing, and most will say it's getting worse. Ask them about specific metrics — poverty, health, education, violence — and the answer changes. The gap between what we feel and what is true is not a failure of intelligence. It is a feature of how our brains work.</p>
+  
+  <p>Understanding these cognitive mechanisms is the first step toward rational optimism. Not optimism as a feeling, but as a method — seeing the world as it is, not as our biases present it.</p>
+  
+  <h2>The Negativity Bias</h2>
+  
+  <div class="bias-box">
+    <strong>Negativity Bias:</strong> The brain processes negative information more thoroughly and remembers it longer than positive information. Bad news is stickier than good news.
+  </div>
+  
+  <p>This bias is ancient. For our ancestors on the African savannah, missing a threat meant death. Missing an opportunity — a patch of berries, a warm shelter — meant a slightly worse day. The asymmetry in consequences shaped a brain that prioritizes threats above all else.</p>
+  
+  <p>In the modern world, this means a single act of violence occupies more mental space than decades of declining crime rates. A plane crash feels more significant than the fact that aviation has become dramatically safer every decade. The bias was adaptive then. It is misleading now.</p>
+  
+  <p>Research by psychologist Roy Baumeister found that negative events have roughly five times the emotional impact of equivalent positive events. Bad impressions form faster than good ones. Negative feedback is processed more deeply than praise. This 5:1 ratio means that for every piece of bad news you encounter, you need roughly five pieces of good news to feel balanced.</p>
+  
+  <p>The media delivers the opposite ratio.</p>
+  
+  <h2>The Availability Heuristic</h2>
+  
+  <div class="bias-box">
+    <strong>Availability Heuristic:</strong> We judge how common something is by how easily examples come to mind. Vivid, recent, emotional events feel more frequent than they actually are.
+  </div>
+  
+  <p>When asked whether shark attacks or lightning strikes kill more people, most people guess sharks. The correct answer is lightning, by a factor of about 30. Sharks are vivid, terrifying, and heavily reported. Lightning is mundane. Our brain equates "easy to recall" with "frequent."</p>
+  
+  <p>This heuristic distorts our view of the world in systematic ways:</p>
+  
+  <ul>
+    <li><strong>Terrorism</strong> feels omnipresent because each attack dominates news cycles for days. But terrorism deaths are statistically rare — far below historical norms.</li>
+    <li><strong>Violent crime</strong> feels like it's rising because each incident is reported. But homicide rates in most developed countries are at or near historic lows.</li>
+    <li><strong>Economic crisis</strong> feels pervasive because downturns affect everyone. But global GDP has grown every decade for a century, and extreme poverty has fallen by 90% since 1990.</li>
+  </ul>
+  
+  <p>The availability heuristic means that the better the media gets at reporting problems, the worse the world feels — even as it improves.</p>
+  
+  <h2>The Pessimism Bias</h2>
+  
+  <div class="bias-box">
+    <strong>Pessimism Bias:</strong> People systematically overestimate the likelihood of negative events and underestimate positive trends. This is distinct from realism — it is a consistent directional error.
+  </div>
+  
+  <p>In a famous 2016 study, Hans Rosling asked people in 30 countries whether the share of the world's population living in extreme poverty had increased, stayed the same, or decreased over the past 20 years. Only 10% gave the correct answer (decreased). The majority believed poverty was increasing.</p>
+  
+  <p>This was not a matter of ignorance. The people surveyed were educated, informed adults. They were wrong because their brains applied a simple heuristic: "Things are probably getting worse." This heuristic feels wise, cautious, and responsible. It is also empirically false.</p>
+  
+  <p>The pessimism bias serves a social function. Expressing pessimism signals seriousness, awareness, and depth. Expressing optimism signals naivety. In many social contexts, pessimism is literally rewarded with more respect than accuracy. This creates a social feedback loop where pessimism is amplified regardless of the evidence.</p>
+  
+  <h2>The Media Distortion Effect</h2>
+  
+  <p>The news media does not create these biases — but it exploits them. A 2018 analysis of major news outlets found that negative news stories outnumbered positive ones by a ratio of 17:1. This is not a conspiracy. It is market dynamics: negative stories get more clicks, more shares, more engagement.</p>
+  
+  <p>The result is a systematic distortion:</p>
+  
+  <ol>
+    <li>Bad news is reported. Good news is not.</li>
+    <li>The brain weights bad news more heavily (negativity bias).</li>
+    <li>Vivid bad news is easily recalled (availability heuristic).</li>
+    <li>Pessimism is socially rewarded (pessimism bias).</li>
+    <li>The world feels worse than it is.</li>
+  </ol>
+  
+  <p>This feedback loop operates whether or not any individual journalist intends it. It is structural. And it means that consuming news makes you systematically less accurate about the state of the world, not more.</p>
+  
+  <h2>Learned Helplessness and Its Cure</h2>
+  
+  <p>When the world feels like it's getting worse and you can't do anything about it, the natural response is learned helplessness — the psychological state where you stop trying because you believe your actions don't matter. This is the mental health crisis of our age: not depression caused by adversity, but depression caused by perceived helplessness in the face of a narrative that says everything is declining.</p>
+  
+  <p>The cure is not positive thinking. It is accurate thinking. When you learn that extreme poverty has fallen by 90%, that child mortality has dropped by two-thirds, that life expectancy has doubled — you don't feel falsely hopeful. You feel accurately informed. And accurate information changes behavior.</p>
+  
+  <blockquote>"The evidence says the world is getting better. The practice says you can too."</blockquote>
+  
+  <h2>How to Overcome Pessimism Bias</h2>
+  
+  <p>These practices are drawn from cognitive behavioral therapy, stoic philosophy, and the research on rational optimism. They form the core of <em>The Optimism Habit</em>, the companion workbook to <em>The Long View</em>.</p>
+  
+  <div class="practice-box">
+    <h3>Practice 1: Check the Baseline</h3>
+    <p>Before reacting to negative news, ask: "Compared to what?" A terrorist attack is horrifying. But how does this year's terrorism death toll compare to 10 years ago? 50 years ago? The comparison almost always reveals improvement, not decline.</p>
+  </div>
+  
+  <div class="practice-box">
+    <h3>Practice 2: Separate Trend from Event</h3>
+    <p>Events are discrete and dramatic. Trends are gradual and invisible. A single mass shooting is an event. The 30-year decline in violent crime is a trend. The media reports events. You must seek out trends.</p>
+  </div>
+  
+  <div class="practice-box">
+    <h3>Practice 3: Practice Source Awareness</h3>
+    <p>Notice how you feel after consuming news. If you feel worse, ask: did I learn something actionable, or did I just absorb threat signals? Most news consumption is not information — it is emotional pollution.</p>
+  </div>
+  
+  <div class="practice-box">
+    <h3>Practice 4: Measure What Matters</h3>
+    <p>Track the metrics that actually reflect human welfare: life expectancy, child mortality, literacy, extreme poverty, violent deaths. These are available from the World Bank, UN, and Our World in Data. They tell a radically different story than the headlines.</p>
+  </div>
+  
+  <div class="practice-box">
+    <h3>Practice 5: Distinguish Problems from Catastrophes</h3>
+    <p>Real problems exist. Climate change, inequality, political instability — these are genuine challenges. But a problem is not a catastrophe. Problems have solutions. Catastrophes have only despair. The framing matters because it determines whether you act or freeze.</p>
+  </div>
+  
+  <h2>The Rational Optimist's Mindset</h2>
+  
+  <p>Rational optimism is not the belief that everything will be fine. It is the belief that the evidence, when examined honestly, shows that things have been improving — and that understanding how and why gives us the tools to continue that improvement. It is a stance of engaged curiosity, not passive hope.</p>
+  
+  <p>The pessimist says: "The world is getting worse, and there's nothing I can do."<br>
+  The rational optimist says: "The world is getting better, and here's how I can help it get better faster."</p>
+  
+  <p>Which frame leads to better outcomes is not a matter of opinion. It is a matter of evidence. And the evidence is clear.</p>
+  
+  <div class="cta-section">
+    <h2>Go Deeper</h2>
+    <p><em>The Long View</em> devotes an entire section to the psychology of pessimism — how it works, why it persists, and how to overcome it. The companion workbook, <em>The Optimism Habit</em>, turns these insights into 7 daily practices.</p>
+    <a href="index.html" class="cta-button">Explore the Books</a>
+  </div>
+  
+  <p style="text-align: center; color: #686050; font-size: 0.9rem; margin-top: 3rem;">
+    References: Hans Rosling, <em>Factfulness</em> (2018); Roy Baumeister, "Bad Is Stronger Than Good" (2001); Daniel Kahneman, <em>Thinking, Fast and Slow</em> (2011); Steven Pinker, <em>The Better Angels of Our Nature</em> (2011).
+  </p>
+</article>
+
+<footer>
+  <p><a href="index.html">The Long View</a> &middot; <a href="evidence.html">Evidence</a> &middot; <a href="psychology.html">Psychology</a> &middot; by Christoph Reiter</p>
+  <p>&copy; 2026</p>
+</footer>
+
+</body>
+</html>
