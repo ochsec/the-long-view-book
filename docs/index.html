@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Long View — Rational Optimism for a World That Thinks It's Falling Apart</title>
+<meta name="description" content="A rational, evidence-based case for optimism. The world is getting better — and here's the proof. By Christoph Reiter.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    background: #0a0e1a;
+    color: #e8e0d0;
+    line-height: 1.6;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,
+      #0a0e1a 0%, #111930 25%, #1a2845 50%, #2a3a5a 70%, #4a5070 85%, #8a6a4a 100%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffe8b0 0%, #ffc870 30%, #ff9840 60%, transparent 100%);
+    filter: blur(2px);
+    box-shadow: 0 0 100px 40px rgba(255, 180, 80, 0.3);
+  }
+  
+  .hero-content {
+    text-align: center;
+    z-index: 10;
+    padding: 2rem;
+    max-width: 800px;
+  }
+  
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 900;
+    color: #faf5ed;
+    letter-spacing: -2px;
+    line-height: 0.95;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 300;
+    color: #dfc8a8;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-author {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f0e0c8;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, #e8a838, #d48838);
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(232, 168, 56, 0.3);
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(232, 168, 56, 0.5);
+  }
+  
+  .cta-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(223, 200, 168, 0.6);
+  }
+  
+  .content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  
+  .content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #faf5ed;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .content p {
+    font-size: 1.15rem;
+    color: #c8c0b0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content .quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #e8d8b8;
+    border-left: 3px solid #e8a838;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem 0;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #e8a838;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #a8a090;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .companion {
+    background: linear-gradient(135deg, #1a1e2e, #1e2438);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    border: 1px solid rgba(232, 168, 56, 0.2);
+  }
+  
+  .companion h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #e8a838;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #686050;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  @media (max-width: 600px) {
+    .stats { flex-direction: column; gap: 1.5rem; }
+    .content { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-author">Christoph Reiter</div>
+    <h1 class="hero-title">The Long View</h1>
+    <p class="hero-subtitle">Rational Optimism for a World That Thinks It's Falling Apart</p>
+    <a href="#" class="cta-button">Available on Amazon Kindle</a>
+    <p class="cta-note">Coming soon to KDP</p>
+  </div>
+</div>
+
+<div class="content">
+  <h2>The world is getting better. The evidence is overwhelming.</h2>
+  
+  <p>Every day, the headlines tell us the world is in crisis. But the data tells a different story. Global poverty is at its lowest point in human history. Child mortality has dropped by two-thirds in a single generation. Life expectancy has doubled in the last century. Violence is declining. Education is spreading. Technology is accelerating.</p>
+  
+  <p><em>The Long View</em> is a rational, evidence-based case for optimism — not blind hope, not denial of real problems, but a clear-eyed look at what the data actually says about human progress.</p>
+  
+  <div class="quote">"The evidence says the world is getting better. The practice says you can too."</div>
+  
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">90%</div>
+      <div class="stat-label">Drop in global extreme poverty since 1990</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">2x</div>
+      <div class="stat-label">Global life expectancy since 1950</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">-66%</div>
+      <div class="stat-label">Child mortality rate since 1990</div>
+    </div>
+  </div>
+  
+  <h2>What's inside</h2>
+  <p>Spanning 11 chapters across four parts — Evidence, Mind, Work, and Vision — <em>The Long View</em> walks through the data on human progress, the psychological biases that prevent us from seeing it, the systems and institutions that drive improvement, and what we can build next.</p>
+  
+  <p>It draws on decades of research from Hans Rosling, Steven Pinker, Max Roser, and dozens of other scholars who have dedicated their careers to measuring what actually changes in the world. Every claim is sourced. Every statistic is verifiable.</p>
+  
+  <div class="companion">
+    <h3>Also Available: The Optimism Habit</h3>
+    <p>A companion short read with 7 daily practices for clear thinking in an anxious world. The practical workbook that turns the book's insights into habits you can apply every day.</p>
+    <p><strong>Coming soon to Kindle.</strong> Read both together for the complete rational optimism toolkit.</p>
+  </div>
+  
+  <h2>About the Author</h2>
+  <p>Christoph Reiter writes about rational optimism, evidence-based thinking, and the practice of clear-mindedness in a world designed to make you anxious. His work draws on systems thinking, cognitive science, and decades of global progress data.</p>
+</div>
+
+<footer>
+  <p>The Long View &middot; The Optimism Habit &middot; by Christoph Reiter</p>
+  <p>&copy; 2026</p>
+</footer>
+
+</body>
+</html>
